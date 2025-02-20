@@ -13,7 +13,7 @@ export const TextGenerateEffect = ({
   filter?: boolean;
   duration?: number;
 }) => {
-  let wordsArray = words.split(" ");
+  const wordsArray = words.split(" "); // ✅ Changed 'let' to 'const'
 
   return (
     <div className={cn("font-bold", className)}>
